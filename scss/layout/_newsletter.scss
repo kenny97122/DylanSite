@@ -1,0 +1,58 @@
+.newsletter {
+    padding: 6rem 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .sign-in {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            h4 {
+                font-size: 3rem;
+                text-transform: uppercase;
+            }
+
+            label {
+                margin: 1rem;
+            }
+        }
+
+        .newsletter__form {
+            flex: 2;
+            margin-left: 4rem;
+            
+            h4 {
+                text-transform: uppercase;
+                font-size: 3rem;
+                span {
+                    display: block;
+                    color: $primary-color;
+                }
+            }
+
+            .form-control {
+                display: flex;
+                input {
+                    width: 80%;
+                    border-radius: 5px 0 0 5px;
+                    padding:1.3rem;
+                    outline: none;
+                    border: 1px solid rgba($black,.3);
+                    border-right: 0;
+                }
+
+                .btn {
+                    border: 0;
+                    border-radius: 0 5px 5px 0;
+                }
+            }
+        }
+    }
+    
+}

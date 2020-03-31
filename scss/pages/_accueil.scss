@@ -1,0 +1,192 @@
+.header {
+    margin-top: 2rem;
+    display: flex;
+    .header__title-box{
+        width: 50%;
+        h1 {
+            font-size: 4rem;
+            width: 90%;
+            padding: 1.5rem 0;
+            margin-bottom: 3rem;
+            position: relative;
+            &::before {
+                position: absolute;
+                width: 60%;
+                content: '';
+                height: 4px;
+                bottom: 0;
+                background-color:$primary-color;
+                border-radius: 50px;
+            }
+        }
+
+        p{
+            font-size: 1.8rem;
+        }
+
+        &__cta {
+            margin-top: 3rem;
+            .btn {
+                margin-right: 1rem;
+            }
+
+        }
+    }
+
+    .header__img-box {
+        width: 50%;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.features {
+    margin: 2rem 0;
+    h2{
+        font-size: 4rem;
+        text-align: center;
+        margin: 4rem 0;
+        padding: 1rem 0;
+        text-transform: uppercase;
+        position: relative;
+          &::before {
+                position: absolute;
+                
+                width: 30%;
+                content: '';
+                height: 4px;
+                bottom: 0;
+                background-color:$primary-color;
+                border-radius: 50px;
+            }
+    }
+
+    .all-features {
+       padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+       .features__box{
+        
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        &__img-container{
+            width: 35%;
+            min-width: 300px;
+           
+            img{
+                border-radius: 10px;
+                width: 100%;
+                transition: all .2s;
+                 box-shadow: 0 1rem 1rem rgba($black, .2);
+                &:hover {
+                     box-shadow: 0 1rem 1.5rem rgba($black, .4);
+                    transform: translateY(-2px) scale(1.05);
+                }
+            }
+        }
+
+        &__text {    
+            width: 40%;
+            padding: 2rem;
+            margin-bottom: 5rem;
+            margin-top: 2rem;
+
+            h3{
+               
+                font-size: 2.5rem;
+                text-transform: uppercase;
+            }
+
+            p {
+                margin: 1rem 0;
+                font-size: 1.7rem;
+            }
+        }
+
+        &.second{
+           transform: translate(3%,-12%);
+            &__text{
+                margin-left: 3rem;
+            }
+        }
+
+          &.third{
+           transform: translateY(-25%);
+            &__text{
+                margin-left: 3rem;
+            }
+         }
+
+         &.fourth {
+            transform: translate(3%,-35%);
+            &__text{
+                margin-left: 3rem;
+            } 
+         }
+       }
+       
+    }
+}
+
+
+.pro-box {
+    background:  url('/images/photos/accueil-7-bg.jpg') no-repeat center center/cover;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    .overlay {
+        background-image:  linear-gradient(to left,rgba($secondary-color,.8), rgba($primary-color,.8));
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .pro-box__text{
+            width: 45%;
+            color: $white;
+            position: relative;
+            h3 {
+                font-size: 4rem;
+                 text-transform: uppercase;
+            }
+
+            p {
+                margin: 1rem 0;
+            }
+
+            .btn--lg {
+                margin-top: 7rem;
+                position: absolute;
+                right: 0;
+            }
+        }
+        .pro-box__img-container {
+            width: 37%;
+            height: 73%;
+            img {
+                border-radius: 15px;
+                width: 100%;
+                height: 100%;
+                transition: all .2s;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+            }
+        }
+    }
+}

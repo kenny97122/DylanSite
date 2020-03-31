@@ -1,0 +1,56 @@
+.btn{
+   
+    @include btn-props;
+    padding:1.2rem 2.5rem;
+     border-radius: 5px;
+    &--primary {
+        background-color: $primary-color;
+        color: $white;
+    }
+
+    &--lg {
+        @include btn-props;
+        padding: 1.2rem 5rem;
+         border-radius: 5px;
+         text-transform: uppercase;
+    }
+
+    &--ghost {
+        border: 2px solid $white;
+        color: $white;
+
+        &:hover {
+            background-color: $white;
+            color: $black;
+        }
+    }
+
+    &--secondary {
+        background-color: $secondary-color;
+        color: $white;
+    }
+}
+
+.cta {
+    @include btn-props;
+    padding: .5rem 0;
+   
+    &--black{
+        border-bottom: 1px solid black;
+        &:hover {
+            color: $white;
+            background-color: $black;
+            
+        }
+    }
+
+    &--secondary{
+        color: $secondary-color;
+        border-bottom: 1px solid $secondary-color;
+        &:hover {
+            color: $white;
+            background-color: $secondary-color;
+            
+        }
+    }
+}

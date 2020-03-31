@@ -1,0 +1,24 @@
+a.active {
+    position: relative;
+     
+     
+    &:before{
+        transition: all ease .3s;
+        transform: translateX(-50%);
+        position: absolute;
+        left: 50%;
+        bottom: -25%;
+        content: '';
+        height: 3.5px;
+        width: 60%;
+        background-color: $primary-color;
+        border-radius: 50px;
+    }
+}
+
+
+.container{
+    max-width: 1300px;
+    width: 90%;
+    margin: auto;
+}
